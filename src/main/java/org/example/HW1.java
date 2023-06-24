@@ -25,12 +25,9 @@ public class HW1 {
 //    Иначе выведите возраст на экран.
 
         System.out.println("Введите свой возраст: ");
-        try {
-            int age = iScanner.nextInt();
-            System.out.println(age);
-        } catch (InputMismatchException ex) {  // Так как данные вводит пользователь, то корректнее будет использовать проверку ввода данных (типа)
-            System.out.println("Некорректный ввод");
-        }
+        String age = iScanner.nextLine();
+        displayAge(age);
+
     }
 
     static void divide (int num1, int num2) {
@@ -39,6 +36,19 @@ public class HW1 {
         } catch (ArithmeticException ex) {
             System.out.println("Деление на ноль недопустимо");
         }
+    }
+
+    static void displayAge (String age) {
+        try {
+            System.out.println(Integer.parseInt(age));
+        } catch (NumberFormatException ex) {
+            System.out.println("Некорректный ввод");
+            ex.printStackTrace();
+        }
+
+//        catch (InputMismatchException ex) {  // Так как данные вводит пользователь, то корректнее будет использовать проверку ввода данных (типа)
+//            System.out.println("Не число");
+//        }
     }
 
 
