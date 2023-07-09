@@ -1,4 +1,8 @@
 package org.example;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /*
 *
 Задача1. Напишите программу-калькулятор, которая запрашивает у пользователя два числа
@@ -18,6 +22,43 @@ package org.example;
 public class HW3 {
 
     public static void main(String[] args) {
+        try {
+            int num1 = getInt("Введите число-основание");
+            int num2 = getInt("Введите показатель степени числа");
+            System.out.println(calculatePower(num1, num2));
+        }catch (InvalidInputException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    public static int getInt(String message) {
+        Scanner scanner = new Scanner(System.in);
+
+            while (true) {
+                try {
+                    System.out.println(message);
+                    return scanner.nextInt();
+                } catch (InputMismatchException ex) {
+                    System.out.println("Ошибка: Введено некорректное число. Повторите ввод.");
+                    scanner.next();
+                }
+            }
 
     }
+
+    public static int calculatePower(int a, int b) throws InvalidInputException{
+        if (a == 0 || b < 0 ) {
+            throw new InvalidInputException("Некорректный ввод");
+        }
+        return (int) Math.pow(a, b);
+
+    }
+
+    static class InvalidInputException extends Exception {
+        public InvalidInputException(String message) {
+            super(message);
+        }
+    }
+
+
 }

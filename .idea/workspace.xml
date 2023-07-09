@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86eabdd1-4dc7-4bde-8ac2-70899d01d7be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HW3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Seminar3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HW3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HW3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +46,9 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Seminar3">
-    <configuration name="HW1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.HW1" />
+  <component name="RunManager" selected="Application.HW3">
+    <configuration name="HW2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HW2" />
       <module name="Exception" />
       <extension name="coverage">
         <pattern>
@@ -61,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HW2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.HW2" />
+    <configuration name="HW3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HW3" />
       <module name="Exception" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HW3" />
         <item itemvalue="Application.Seminar3" />
         <item itemvalue="Application.HW2" />
         <item itemvalue="Application.Seminar2Task1" />
         <item itemvalue="Application.Seminar2" />
-        <item itemvalue="Application.HW1" />
       </list>
     </recent_temporary>
   </component>
